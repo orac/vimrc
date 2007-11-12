@@ -37,6 +37,7 @@ set scrolloff=6
 set mouse=a
 set path=,.,**
 set splitright
+set modeline
 
 " search options
 set hlsearch
