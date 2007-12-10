@@ -38,6 +38,7 @@ set mouse=a
 set path=,.,**
 set splitright
 set modeline
+set nrformats=hex,alpha
 
 " search options
 set hlsearch
