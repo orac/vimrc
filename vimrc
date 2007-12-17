@@ -85,11 +85,12 @@ colorscheme koehler
 ia happenned happened
 ia happenning happening
 ia nn NULL
-digraph `` 8220 " 66's
-digraph '' 8221 " 99's
-digraph `' 8216 " 6
-digraph '` 8217 " 9
-digraph -^ 8593 " upwards arrow
+digraph `` 8220 " “ 66's
+digraph '' 8221 " ” 99's
+digraph `' 8216 " ‘ 6
+digraph '` 8217 " ’ 9
+digraph .. 8230 " … horiz ellipsis, RFC 1345 specifies ‥ two-dot leader instead
+digraph -^ 8593 " ↑ upwards arrow, RFC 1345 specifies <- -> -v for similar arrows
 
 " maths-related digraphs and abbrs
 digraph := 8788
@@ -108,10 +109,10 @@ ia \|/= ⊭
 ia \|\|/- ⊮
 ia \|\|/= ⊯
 
-digraph [- 8261 " bracket with quill
-digraph -] 8262
-digraph [[ 12314 " semantic (double) bracket
-digraph ]] 12315
+digraph [- 8261 " ⁅ bracket with quill
+digraph -] 8262 " ⁆ closing bracket with quill
+digraph [[ 12314 " 〚 semantic (double) bracket
+digraph ]] 12315 " 〛 closing semantic bracket
 
 " netrw
 let g:netrw_altv=1
