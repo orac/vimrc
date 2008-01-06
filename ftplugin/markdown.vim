@@ -10,5 +10,5 @@ endif
 
 let b:did_ftplugin = 1
 setl spell
-set tw=80
+setl tw=80
 setl complete=.,kspell
