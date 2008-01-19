@@ -90,7 +90,8 @@ digraph '' 8221 " ” 99's
 digraph `' 8216 " ‘ 6
 digraph '` 8217 " ’ 9
 digraph .. 8230 " … horiz ellipsis, RFC 1345 specifies ‥ two-dot leader instead
-digraph -^ 8593 " ↑ upwards arrow, RFC 1345 specifies <- -> -v for similar arrows
+digraph -^ 8593 " ↑ upwards arrow, RFC 1345 also specifies <- -> -v for similar arrows
+digraph EU 8364 " € Euro sign
 
 " maths-related digraphs and abbrs
 digraph := 8788
