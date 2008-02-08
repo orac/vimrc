@@ -94,7 +94,7 @@ digraph -^ 8593 " ↑ upwards arrow, RFC 1345 also specifies <- -> -v for simila
 digraph EU 8364 " € Euro sign
 
 " maths-related digraphs and abbrs
-digraph := 8788
+digraph := 8788 " ≔ colon equals
 ia ::= ⩴
 ia -/-> ↛
 ia =/=> ⇏
