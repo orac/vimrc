@@ -22,7 +22,7 @@ nnoremap <F4> :b #<Enter>
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
 nnoremap <F6> gwap
-inoremap <F6> gww<Esc>
+inoremap <F6> gww
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
