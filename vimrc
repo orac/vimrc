@@ -40,6 +40,7 @@ set splitright
 set modeline
 set nrformats=hex,alpha
 set formatoptions=tcroql
+set autoread
 
 " search options
 set hlsearch
