@@ -17,10 +17,12 @@ map <xEnd> <End>
 nnoremap <F1> :ptag <CR>
 nnoremap <F2> :Tlist<Enter>
 nnoremap <F3> :nohlsearch<Enter>
+inoremap <F3> :nohlsearch<Enter>
 nnoremap <F4> :b #<Enter>
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
 nnoremap <F6> gwap
+inoremap <F6> gww<Esc>
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
