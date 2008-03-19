@@ -39,6 +39,7 @@ set path=,.,**
 set splitright
 set modeline
 set nrformats=hex,alpha
+set formatoptions=tcroql
 
 " search options
 set hlsearch
