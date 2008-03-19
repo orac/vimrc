@@ -118,6 +118,9 @@ digraph ]] 12315 " 〛 closing semantic bracket
 " netrw
 let g:netrw_altv=1
 
+" Doxygen
+let g:load_doxygen_syntax=1
+
 " Perl ftplugin
 let perlpath = &g:path
 
