@@ -1,3 +1,4 @@
+set encoding=utf8
 syntax enable
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -22,7 +23,7 @@ nnoremap <F4> :b #<Enter>
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
 nnoremap <F6> gwap
-inoremap <F6> gww
+inoremap <F6> gww<Right>
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
@@ -43,6 +44,11 @@ set modeline
 set nrformats=hex,alpha
 set formatoptions=tcroql
 set autoread
+
+" set up list mode to show dodgy whitespace
+" it uses the SpecialKey hl group to show these characters
+set list
+set listchars=trail:_,tab:→·,nbsp:░
 
 " search options
 set hlsearch
@@ -69,10 +75,12 @@ set smarttab
 
 set suffixes=.bak,~,.swp,.swo,.o,.info,.aux,.log,.dvi,.ps,.pdf,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png
 set termencoding=utf8
-set encoding=utf8
 set viminfo='20,\"50
+
+" spell-checker options
 set spelllang=en_gb
 set spellcapcheck=
+set spellfile=$HOME/.vim/spell/en.utf-8.add
 "set spell
 
 " visual options
