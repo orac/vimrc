@@ -105,6 +105,30 @@ digraph .. 8230 " … horiz ellipsis, RFC 1345 specifies ‥ two-dot leader inst
 digraph -^ 8593 " ↑ upwards arrow, RFC 1345 also specifies <- -> -v for similar arrows
 digraph EU 8364 " € Euro sign
 
+" the following tall character digraphs are inspired by RFC1345 Iu and Il for
+" upper- and lower-half integral sign ⌠ ⌡
+digraph Im 9134 " ⎮ integral extension
+digraph (u 9115 " ⎛ left paren upper hook
+digraph (m 9116 " ⎜ left paren extension
+digraph (l 9117 " ⎝ left paren lower hook
+digraph )u 9118 " ⎞ right paren upper hook
+digraph )m 9119 " ⎟ right paren extension
+digraph )l 9120 " ⎠ right paren lower hook
+digraph [u 9121 " ⎡ left square bracket upper corner
+digraph [m 9122 " ⎢ left square bracket extension
+digraph [l 9123 " ⎣ left square bracket lower corner
+digraph ]u 9124 " ⎤ right square bracket upper corner
+digraph ]m 9125 " ⎥ right square bracket extension
+digraph ]l 9126 " ⎦ right square bracket lower corner
+digraph {u 9127 " ⎧ left curly bracket upper hook
+digraph {m 9128 " ⎨ left curly bracket middle piece
+digraph {l 9129 " ⎩ left curly bracket lower hook
+digraph }u 9127 " ⎫ left curly bracket upper hook
+digraph }m 9128 " ⎬ left curly bracket middle piece
+digraph }l 9129 " ⎭ left curly bracket lower hook
+digraph {} 9136 " ⎰ upper left or lower right curly bracket section
+digraph }{ 9137 " ⎱ upper right or lower left curly bracket section
+
 " maths-related digraphs and abbrs
 digraph := 8788 " ≔ colon equals
 ia ::= ⩴
@@ -127,6 +151,10 @@ digraph -] 8262 " ⁆ closing bracket with quill
 digraph [[ 12314 " 〚 semantic (double) bracket
 digraph ]] 12315 " 〛 closing semantic bracket
 
+" fold expr works like fdm=indent but includes the last non-indented line with
+" the indented fold
+set foldexpr=max(\[indent(v:lnum+1),indent(v:lnum)\])
+
 " netrw
 let g:netrw_altv=1
 
@@ -137,4 +165,4 @@ let g:load_doxygen_syntax=1
 let perlpath = &g:path
 
 " TeX ftplugin
-let g:Tex_ViewRule_pdf='xpdf' 
+let g:Tex_ViewRule_pdf='xpdf'
