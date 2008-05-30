@@ -1,11 +1,11 @@
 set encoding=utf8
+filetype plugin indent on
 syntax enable
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
 runtime macros/justify.vim
 runtime macros/matchit.vim
-runtime indent.vim
 
 " key maps
 map! <S-Insert> <MiddleMouse>
