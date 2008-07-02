@@ -1,9 +1,7 @@
 set encoding=utf8
 filetype plugin indent on
 syntax enable
-if &cp | set nocp | endif
-let s:cpo_save=&cpo
-set cpo&vim
+set nocp
 runtime macros/justify.vim
 runtime macros/matchit.vim
 
@@ -30,8 +28,6 @@ nnoremap <BS> <PageUp>
 nnoremap S m'a<CR><Esc>`'
 
 " general options
-let &cpo=s:cpo_save
-unlet s:cpo_save
 set backspace=indent,eol,start
 set helplang=en
 set history=50
@@ -44,6 +40,14 @@ set modeline
 set nrformats=hex,alpha
 set formatoptions=tcroql
 set autoread
+" thanks to http://www.eseth.org/filez/prefs/vimrc for drawing my attention to
+" these:
+set nojs
+set wildmode=longest,full
+set wildmenu
+" these two make wmnu operate in a sane way
+cnoremap <Left> <Space><BS><Left>
+cnoremap <Right> <Space><BS><Right>
 
 " set up list mode to show dodgy whitespace
 " it uses the SpecialKey hl group to show these characters
