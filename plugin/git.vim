@@ -79,12 +79,12 @@ function! GitStatus()
     let git_output = system('git status')
     call <SID>OpenGitBuffer(git_output)
     setlocal filetype=git-status
-    nnoremap <buffer> <CR> :GitAdd <cfile><CR>
+    nnoremap <buffer> <CR> :GitAdd <cfile><CR>:GitStatus<CR>
 endfunction
 
 " Show Log.
-function! GitLog()
-    let git_output = system('git log -- ' . s:Expand('%'))
+function! GitLog(args)
+    let git_output = system('git log ' . a:args . ' -- ' . s:Expand('%'))
     call <SID>OpenGitBuffer(git_output)
     setlocal filetype=git-log
 endfunction
@@ -104,10 +104,16 @@ function! GitCommit(args)
     call system('git commit ' . a:args)
     let $EDITOR = editor_save
 
+    if !exists('b:git_dir')
+        let b:git_dir = finddir('.git', expand('%:p:h') . ';/')
+        if strlen(b:git_dir)
+            let b:git_dir = fnamemodify(b:git_dir, ':p')
+        endif
+    endif
+
     execute printf('%s %sCOMMIT_EDITMSG', g:git_command_edit, b:git_dir)
-    setlocal filetype=git-status bufhidden=wipe
+    setlocal bufhidden=wipe
     augroup GitCommit
-        autocmd BufWritePre  <buffer> g/^#\|^\s*$/d | setlocal fileencoding=utf-8
         execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s -F ' . expand('%%')) | autocmd! GitCommit * <buffer>", a:args)
     augroup END
 endfunction
@@ -215,7 +221,7 @@ command! -nargs=1 -complete=customlist,ListGitCommits GitCheckout call GitChecko
 command! -nargs=* -complete=customlist,ListGitCommits GitDiff     call GitDiff(<q-args>)
 command!          GitStatus           call GitStatus()
 command! -nargs=? GitAdd              call GitAdd(<q-args>)
-command!          GitLog              call GitLog()
+command! -nargs=* GitLog              call GitLog(<q-args>)
 command! -nargs=* GitCommit           call GitCommit(<q-args>)
 command! -nargs=1 GitCatFile          call GitCatFile(<q-args>)
 command! -nargs=+ Git                 call GitDoCommand(<q-args>)
