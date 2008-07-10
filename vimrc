@@ -49,6 +49,9 @@ set wildmenu
 cnoremap <Left> <Space><BS><Left>
 cnoremap <Right> <Space><BS><Right>
 
+" add command to write and reopen
+command -nargs=0 -bang W w<bang> | e
+
 " set up list mode to show dodgy whitespace
 " it uses the SpecialKey hl group to show these characters
 set list
