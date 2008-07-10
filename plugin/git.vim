@@ -114,7 +114,7 @@ function! GitCommit(args)
     execute printf('%s %sCOMMIT_EDITMSG', g:git_command_edit, b:git_dir)
     setlocal bufhidden=wipe
     augroup GitCommit
-        execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s -F ' . expand('%%')) | autocmd! GitCommit * <buffer>", a:args)
+        execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s --cleanup=strip -F ' . expand('%%')) | autocmd! GitCommit * <buffer>", a:args)
     augroup END
 endfunction
 
