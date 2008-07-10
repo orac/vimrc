@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.fx set filetype=cg
+au BufRead,BufNewFile *.fx,*.fxh set filetype=cg
