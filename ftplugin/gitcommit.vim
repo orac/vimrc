@@ -1,5 +1,5 @@
 " Vim filetype plugin
-" Language:	git config file
+" Language:	git commit message
 " Maintainer:	Tim Pope <vimNOSPAM@tpope.info>
 " Last Change:	2008 Jun 04
 
@@ -19,6 +19,9 @@ if &textwidth == 0
   endif
   let b:undo_ftplugin = b:undo_ftplugin . "|setl tw<"
 endif
+
+setl comments=b:#,fb:-,fb:*
+let b:undo_ftplugin = b:undo_ftplugin . "|setl comments<"
 
 if exists("g:no_gitcommit_commands") || v:version < 700
   finish
