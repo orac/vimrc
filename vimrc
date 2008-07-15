@@ -75,10 +75,11 @@ set printoptions=paper:a4,left:10mm,right:10mm,top:14mm,bottom:14mm,duplex:long,
 set printfont=Neep\ Alt\ 10
 set printheader=%<%f%h%m%=Page\ %N
 
-"tabbing
+"tabbing and indentation
 set shiftwidth=2
 set expandtab
 set smarttab
+set cino=(0,g1s,h0
 
 set suffixes=.bak,~,.swp,.swo,.o,.info,.aux,.log,.dvi,.ps,.pdf,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png
 set termencoding=utf8
