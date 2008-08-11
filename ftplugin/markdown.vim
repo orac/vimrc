@@ -12,3 +12,8 @@ let b:did_ftplugin = 1
 setl spell
 setl tw=80
 setl complete=.,kspell
+setl nolist
+" from http://plasticboy.com/markdown-vim-mode/
+setl ai formatoptions=tcroqn2 comments=n:>
+" sw has to be 4 for code blocks to work
+setl sw=4

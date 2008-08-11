@@ -2,8 +2,8 @@
 " Language:	Markdown
 " Maintainer:	Ben Williams <benw@plasticboy.com>
 " URL:		http://plasticboy.com/markdown-vim-mode/
-" Version:	8
-" Last Change:  2008 April 29
+" Version:	8 + local changes
+" Last Change:  2008 August 11 (upstream: 2008 April 29)
 " Remark:	Uses HTML syntax file
 " Remark:	I don't do anything with angle brackets (<>) because that would too easily
 "		easily conflict with HTML syntax
@@ -55,9 +55,10 @@ syn match  mkdRule      /^\s*\*\{3,5}$/
 syn match  mkdListItem  "^\s*[-*+]\s\+"
 syn match  mkdListItem  "^\s*\d\+\.\s\+"
 syn match  mkdCode      /^\s*\n\(\(\s\{4,}\|[\t]\+\)[^*-+ ].*\n\)\+/
+syn match  mkdLineBreak /  \+$/
 syn region mkdCode      start=/`/                   end=/`/
 syn region mkdCode      start=/\s*``[^`]*/          end=/[^`]*``\s*/
-syn region mkdBlockquote start=/^\s*>/              end=/$/                 contains=mkdLineContinue,@Spell
+syn region mkdBlockquote start=/^\s*>/              end=/$/                 contains=mkdLineBreak,mkdLineContinue,@Spell
 syn region mkdCode      start="<pre[^>]*>"         end="</pre>"
 syn region mkdCode      start="<code[^>]*>"        end="</code>"
 
@@ -78,7 +79,7 @@ HtmlHiLink mkdBlockquote    Comment
 HtmlHiLink mkdLineContinue  Comment
 HtmlHiLink mkdListItem      Identifier
 HtmlHiLink mkdRule          Identifier
-
+HtmlHiLink mkdLineBreak     Todo
 
 let b:current_syntax = "mkd"
 
