@@ -120,7 +120,7 @@ function! GitCommit(args)
     let $EDITOR = editor_save
 
     execute printf('%s %sCOMMIT_EDITMSG', g:git_command_edit, git_dir)
-    setlocal filetype=git-status bufhidden=wipe
+    setlocal bufhidden=wipe
     augroup GitCommit
         execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s --cleanup=strip -F ' . expand('%%')) | autocmd! GitCommit * <buffer>", a:args)
     augroup END
