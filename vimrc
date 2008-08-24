@@ -121,9 +121,12 @@ let g:netrw_altv=1
 
 " Doxygen
 let g:load_doxygen_syntax=1
+let g:doxygen_enhanced_colour=1
+let doxygen_end_punctuation = '[.?]'
 
 " Perl ftplugin
 let perlpath = &g:path
+let perl_include_pod = 1
 
 " TeX ftplugin
 let g:Tex_ViewRule_pdf='xpdf'
