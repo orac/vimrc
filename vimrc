@@ -6,11 +6,9 @@ runtime macros/justify.vim
 runtime macros/matchit.vim
 
 " key maps
-map! <S-Insert> <MiddleMouse>
 map! <xHome> <Home>
 map! <xEnd> <End>
 vnoremap p :let current_reg = @"gvdi=current_reg
-map <S-Insert> <MiddleMouse>
 map <xHome> <Home>
 map <xEnd> <End>
 nnoremap <F1> :ptag <CR>
@@ -30,6 +28,10 @@ nnoremap S m'a<CR><Esc>`'
 " add an undo point before pasting
 inoremap  u
 inoremap <MiddleMouse> u<MiddleMouse>
+" wrap selected block in braces and indent
+vnoremap } >g'<O{<Esc>g'>o}<Esc>
+" unblockify block
+nnoremap { [{<%']dd''dd''
 
 " general options
 set backspace=indent,eol,start
@@ -63,7 +65,7 @@ set listchars=trail:_,tab:→·,nbsp:░
 
 " search options
 set hlsearch
-nohlsearch
+nohlsearch " because I hate starting Vim and getting the last search from my previous session hl'ed
 set incsearch
 set ignorecase smartcase
 
