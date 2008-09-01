@@ -6,6 +6,13 @@ digraph '' 8221 " ” 99's
 digraph `' 8216 " ‘ 6
 digraph '` 8217 " ’ 9
 digraph .. 8230 " … horiz ellipsis, RFC 1345 specifies ‥ two-dot leader instead
+
+digraph ^+ 8314 " ⁺ superscript +
+digraph ^- 8315 " ⁻ superscript -
+digraph ^= 8316 " ⁼ superscript =
+digraph ^n 8319 " ⁿ superscript n
+digraph _x 8339 " ₓ subscript x
+
 digraph EU 8364 " € Euro sign
 digraph -^ 8593 " ↑ upwards arrow, RFC 1345 also specifies <- -> -v for similar arrows
 
