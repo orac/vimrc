@@ -64,47 +64,48 @@ digraph [[ 12314 " 〚 semantic (double) bracket
 digraph ]] 12315 " 〛 closing semantic bracket
 
 " add abbrs corresponding to some RFC1345 n-graphs
-abbr `(1) ⑴ " paren'ed digit one
-abbr `(2) ⑥
-abbr `(3) ⑦
-abbr `(4) ⑧
-abbr `(5) ⑨
-abbr `(6) ⑩
-abbr `(7) ⑪
-abbr `(8) ⑫
-abbr `(9) ⑬
-abbr `(10) ⑭
-abbr `(11) ⑭
-abbr `(12) ⑭
-abbr `(13) ⑮
-abbr `(14) ⑯
-abbr `(15) ⑰
-abbr `(16) ⑱
-abbr `(17) ⑲
-abbr `(18) ⑱
-abbr `(19) ⑲
-abbr `(20) ⑳
-
-abbr `1. ⒈ " digit one full stop
-abbr `2. ⒉
-abbr `3. ⒊
-abbr `4. ⒋
-abbr `5. ⒌
-abbr `6. ⒍
-abbr `7. ⒎
-abbr `8. ⒏
-abbr `9. ⒐
-abbr `10. ⒑
-abbr `11. ⒒
-abbr `12. ⒓
-abbr `13. ⒔
-abbr `14. ⒕
-abbr `15. ⒖
-abbr `16. ⒗
-abbr `17. ⒘
-abbr `18. ⒙
-abbr `19. ⒚
-abbr `20. ⒛
+" paren'ed number
+ia `(1) ⑴
+ia `(2) ⑥
+ia `(3) ⑦
+ia `(4) ⑧
+ia `(5) ⑨
+ia `(6) ⑩
+ia `(7) ⑪
+ia `(8) ⑫
+ia `(9) ⑬
+ia `(10) ⑭
+ia `(11) ⑭
+ia `(12) ⑭
+ia `(13) ⑮
+ia `(14) ⑯
+ia `(15) ⑰
+ia `(16) ⑱
+ia `(17) ⑲
+ia `(18) ⑱
+ia `(19) ⑲
+ia `(20) ⑳
+" number full stop
+ia `1. ⒈
+ia `2. ⒉
+ia `3. ⒊
+ia `4. ⒋
+ia `5. ⒌
+ia `6. ⒍
+ia `7. ⒎
+ia `8. ⒏
+ia `9. ⒐
+ia `10. ⒑
+ia `11. ⒒
+ia `12. ⒓
+ia `13. ⒔
+ia `14. ⒕
+ia `15. ⒖
+ia `16. ⒗
+ia `17. ⒘
+ia `18. ⒙
+ia `19. ⒚
+ia `20. ⒛
 
 digraph a) 9372 " ⒜ paren'd Latin a
 digraph b) 9373
