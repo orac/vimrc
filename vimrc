@@ -23,11 +23,17 @@ inoremap <F6> gww<Right>
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
+
 " split lines (opposite of J)
 nnoremap S m'a<CR><Esc>`'
+
 " add an undo point before pasting
 inoremap  u
 inoremap <MiddleMouse> u<MiddleMouse>
+
+" make ^l act like it does in normal mode in insert mode
+inoremap  
+
 " wrap selected block in braces and indent
 vnoremap } >g'<O{<Esc>g'>o}<Esc>
 " unblockify block
