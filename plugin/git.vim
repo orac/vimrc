@@ -70,7 +70,7 @@ endfunction
 
 " Show diff.
 function! GitDiff(args)
-    let git_output = system('git diff ' . a:args . ' -- ' . s:Expand('%'))
+    let git_output = system('git diff ' . a:args . ' -- ' . shellescape(s:Expand('%')))
     if !strlen(git_output)
         echo "No output from git command"
         return
@@ -97,7 +97,7 @@ endfunction
 
 " Show Log.
 function! GitLog(args)
-    let git_output = system('git log ' . a:args . ' -- ' . s:Expand('%'))
+    let git_output = system('git log ' . a:args . ' -- ' . shellescape(s:Expand('%')))
     call <SID>OpenGitBuffer(git_output)
     setlocal filetype=git-log
 endfunction
@@ -106,7 +106,7 @@ endfunction
 function! GitAdd(expr)
     let file = s:Expand(strlen(a:expr) ? a:expr : '%')
 
-    call GitDoCommand('add ' . file)
+    call GitDoCommand('add ' . shellescape(file))
 endfunction
 
 " Commit.
@@ -122,7 +122,7 @@ function! GitCommit(args)
     execute printf('%s %sCOMMIT_EDITMSG', g:git_command_edit, git_dir)
     setlocal bufhidden=wipe
     augroup GitCommit
-        execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s --cleanup=strip -F ' . expand('%%')) | autocmd! GitCommit * <buffer>", a:args)
+        execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s --cleanup=strip -F ' . shellescape(expand('%%'))) | autocmd! GitCommit * <buffer>", a:args)
     augroup END
 endfunction
 
@@ -135,7 +135,7 @@ endfunction
 function! GitCatFile(file)
     let file = s:Expand(a:file)
     "let file_type  = system('git cat-file -t ' . file)
-    let git_output = system('git cat-file -p ' . file)
+    let git_output = system('git cat-file -p ' . shellescape(file))
     if !strlen(git_output)
         echo "No output from git command"
         return
