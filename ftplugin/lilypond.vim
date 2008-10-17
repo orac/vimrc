@@ -17,18 +17,9 @@ let b:did_ftplugin = 1
 
 setlocal autoindent
 setlocal shiftwidth=2
-"
-" some handy key mappings
-"
-" <F4>  save & make and play midi
-map <buffer> <F4> :w<Return>:se makeprg=lilypond\ -m\ '%<'<Return>:make<Return>:!timidity %<.midi<Return>
-"
-" <F5>  save & make dvi, midi, ps
-map <buffer> <F5> :w<Return>:se makeprg=lilypond\ '%<'<Return>:make<Return>
-"
-" <F6>  view ps
-map <buffer> <F6> :!xpdf '%<'.pdf &<Return>
-"
+
+setl makeprg=lilypond\ \"%\"
+
 " <F10> menu
 source $VIMRUNTIME/menu.vim
 setlocal wildmenu
