@@ -91,7 +91,12 @@ set printheader=%<%f%h%m%=Page\ %N
 set shiftwidth=2
 set expandtab
 set smarttab
-set cino=(0,g1s,h0
+set cino=(0,W1s,m1,g1s,h0
+" (0 vertically aligns things inside unclosed parens
+" Ws turns off (0 when the unclosed paren is the last thing on a line
+" m1 aligns closing parens like closing braces
+" g1s indents `public:` &c. by a shiftwidth
+" h0 aligns things after `public:` &c. with the `public:`
 
 set suffixes=.bak,~,.swp,.swo,.o,.info,.aux,.log,.dvi,.ps,.pdf,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png
 set termencoding=utf8
