@@ -64,6 +64,9 @@ cnoremap <Right> <Space><BS><Right>
 " add command to write and reopen
 command -nargs=0 -bang W w<bang> | e
 
+" command to trim trailing whitespace
+command -nargs=0 -range=% TrimSpace <line1>,<line2>s/\s\+$// | noh | normal 
+
 " set up list mode to show dodgy whitespace
 " it uses the SpecialKey hl group to show these characters
 set list
