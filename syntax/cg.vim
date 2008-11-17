@@ -79,6 +79,8 @@ syn match cgSwizzle		/\.[stqr]\{1,4\}\>/
 syn match cgSwizzle		/\.\(_m[0-3]\{2}\)\{1,4\}\>/
 syn match cgSwizzle		/\.\(_[1-4]\{2}\)\{1,4\}\>/
 syn match cgSemantic		/:\s*[A-Z]\w*/
+syn cluster cMultiGroup add=cgSemantic
+
 syn keyword cgStorageClass	in out inout uniform packed const
 syn keyword cgNumber	NPOS
 "syn keyword cgBoolean	true false none
