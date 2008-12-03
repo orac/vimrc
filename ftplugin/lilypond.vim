@@ -18,7 +18,7 @@ let b:did_ftplugin = 1
 setlocal autoindent
 setlocal shiftwidth=2
 
-setl makeprg=lilypond\ \"%\"
+comp lilypond
 
 " <F10> menu
 source $VIMRUNTIME/menu.vim
