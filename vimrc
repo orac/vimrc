@@ -39,6 +39,10 @@ vnoremap } >g'<O{<Esc>g'>o}<Esc>
 " unblockify block
 nnoremap { [{<%']dd''dd''
 
+" like gf but in a new window
+nnoremap [f :sp<Enter>gf
+nnoremap [F :sp<Enter>gF
+
 " general options
 set backspace=indent,eol,start
 set helplang=en
