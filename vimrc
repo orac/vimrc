@@ -11,15 +11,24 @@ map! <xEnd> <End>
 vnoremap p :let current_reg = @"gvdi=current_reg
 map <xHome> <Home>
 map <xEnd> <End>
+
+" open preview window for keyword under cursor
 nnoremap <F1> :ptag <CR>
 nnoremap <F2> :Tlist<Enter>
 nnoremap <F3> :nohlsearch<Enter>
 inoremap <F3> :nohlsearch<Enter>
+
+" switch to alternate buffer
 nnoremap <F4> :b #<Enter>
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
+
+" re-break paragraph under cursor
 nnoremap <F6> gwap
-inoremap <F6> gww<Right>
+
+" put an undo point and re-break current line
+inoremap <F6> ugww<Right>
+
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
