@@ -3,7 +3,7 @@
 " Maintainer:	Ben Williams <benw@plasticboy.com>
 " URL:		http://plasticboy.com/markdown-vim-mode/
 " Version:	8 + local changes
-" Last Change:  2008 August 11 (upstream: 2008 April 29)
+" Last Change:  2009 January 6 (upstream: 2008 April 29)
 " Remark:	Uses HTML syntax file
 " Remark:	I don't do anything with angle brackets (<>) because that would too easily
 "		easily conflict with HTML syntax
@@ -37,10 +37,10 @@ syn case ignore
 syn sync linebreaks=1
 
 "additions to HTML groups
-syn region htmlBold     start=/\(^\|\s\)\*\@<!\*\*\*\@!/     end=/\*\@<!\*\*\*\@!\($\|\s\)/   contains=@Spell,htmlItalic
-syn region htmlItalic   start=/\(^\|\s\)\*\@<!\*\*\@!/       end=/\*\@<!\*\*\@!\($\|\s\)/      contains=htmlBold,@Spell
-syn region htmlBold     start=/\(^\|\s\)_\@<!___\@!/         end=/_\@<!___\@!\($\|\s\)/       contains=htmlItalic,@Spell
-syn region htmlItalic   start=/\(^\|\s\)_\@<!__\@!/          end=/_\@<!__\@!\($\|\s\)/        contains=htmlBold,@Spell
+syn region htmlBold     start=/\(^\|\W\)\*\@<!\*\*\*\@!/     end=/\*\@<!\*\*\*\@!\($\|\W\)/   contains=@Spell,htmlItalic
+syn region htmlItalic   start=/\(^\|\W\)\*\@<!\*\*\@!/       end=/\*\@<!\*\*\@!\($\|\W\)/      contains=htmlBold,@Spell
+syn region htmlBold     start=/\(^\|\W\)_\@<!___\@!/         end=/_\@<!___\@!\($\|\W\)/       contains=htmlItalic,@Spell
+syn region htmlItalic   start=/\(^\|\W\)_\@<!__\@!/          end=/_\@<!__\@!\($\|\W\)/        contains=htmlBold,@Spell
 syn region htmlString   start="]("ms=s+2             end=")"me=e-1
 syn region htmlLink     start="\["ms=s+1            end="\]"me=e-1 contains=@Spell
 syn region htmlString   start="\(\[.*]: *\)\@<=.*"  end="$"
