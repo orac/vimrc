@@ -29,6 +29,9 @@ nnoremap <F6> gwap
 " put an undo point and re-break current line
 inoremap <F6> ugww<Right>
 
+" :cn is too much typing
+nnoremap <F8> :cn<Enter>
+
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
