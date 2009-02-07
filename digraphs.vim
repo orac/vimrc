@@ -66,25 +66,25 @@ digraph ]] 12315 " 〛 closing semantic bracket
 " add abbrs corresponding to some RFC1345 n-graphs
 " paren'ed number
 ia `(1) ⑴
-ia `(2) ⑥
-ia `(3) ⑦
-ia `(4) ⑧
-ia `(5) ⑨
-ia `(6) ⑩
-ia `(7) ⑪
-ia `(8) ⑫
-ia `(9) ⑬
-ia `(10) ⑭
-ia `(11) ⑭
-ia `(12) ⑭
-ia `(13) ⑮
-ia `(14) ⑯
-ia `(15) ⑰
-ia `(16) ⑱
-ia `(17) ⑲
-ia `(18) ⑱
-ia `(19) ⑲
-ia `(20) ⑳
+ia `(2) ⑵
+ia `(3) ⑶
+ia `(4) ⑷
+ia `(5) ⑸
+ia `(6) ⑹
+ia `(7) ⑺
+ia `(8) ⑻
+ia `(9) ⑼
+ia `(10) ⑽
+ia `(11) ⑾
+ia `(12) ⑿
+ia `(13) ⒀
+ia `(14) ⒁
+ia `(15) ⒂
+ia `(16) ⒃
+ia `(17) ⒄
+ia `(18) ⒅
+ia `(19) ⒆
+ia `(20) ⒇
 " number full stop
 ia `1. ⒈
 ia `2. ⒉
@@ -127,7 +127,7 @@ digraph q) 9388
 digraph r) 9389
 digraph s) 9390
 digraph t) 9391
-" no u because RFC 1345 has u) being ⎞, and )u is ⎞ from above
+" no u because RFC 1345 has u) being ŭ, and )u is ⎞ from above
 digraph v) 9393
 digraph w) 9394
 digraph x) 9395
