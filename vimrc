@@ -134,6 +134,7 @@ set showmatch
 set showcmd
 set guioptions-=T
 set guifont=Neep\ Alt\ 8
+au GuiEnter * set lines=60
 "set mousemodel=popup
 colorscheme koehler
 
