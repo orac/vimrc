@@ -31,6 +31,7 @@ inoremap <F6> ugww<Right>
 
 " :cn is too much typing
 nnoremap <F8> :cn<Enter>
+nnoremap <S-F8> :cprev<Enter>
 
 "imap <F5> :call strftime("/* %m/%y dh */")
 nnoremap <Space> <PageDown>
