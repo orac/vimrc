@@ -60,7 +60,6 @@ nnoremap [F :sp<Enter>gF
 set backspace=indent,eol,start
 set helplang=en
 set history=50
-set scrolloff=6
 "set scrolljump=6
 set mouse=a
 set path=,.,**
@@ -94,6 +93,20 @@ set hlsearch
 nohlsearch " because I hate starting Vim and getting the last search from my previous session hl'ed
 set incsearch
 set ignorecase smartcase
+
+" set scrolloff usefully
+func! SetScrollOff()
+  if (winheight(0) >= 30)
+    set scrolloff=6
+  elseif (winheight(0) >= 18)
+    set scrolloff=2
+  else
+    set scrolloff=0
+  endif
+endfunc
+
+au VimResized,WinEnter * call SetScrollOff()
+call SetScrollOff()
 
 " printing options
 set printexpr=PrintFile(v:fname_in)
