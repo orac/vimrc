@@ -121,7 +121,7 @@ set printfont=Neep\ Alt\ 10
 set printheader=%<%f%h%m%=Page\ %N
 
 "tabbing and indentation
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set smarttab
 set cino=(0,W1s,m1,g1s,h0
