@@ -68,6 +68,7 @@ set modeline
 set nrformats=hex,alpha
 set formatoptions=tcroql
 set autoread
+set complete=.,w,b,u,t
 set nosol
 set dict=/usr/share/dict/words
 " thanks to http://www.eseth.org/filez/prefs/vimrc for drawing my attention to
