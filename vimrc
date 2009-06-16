@@ -18,8 +18,8 @@ nnoremap <F2> :Tlist<Enter>
 nnoremap <F3> :nohlsearch<Enter>
 inoremap <F3> :nohlsearch<Enter>
 
-" switch to alternate buffer
-nnoremap <F4> :b #<Enter>
+" deprecate this F4 map
+nnoremap <F4> :echo "Use CTRL-6 instead, you retard."<CR>
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
 
