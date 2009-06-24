@@ -1019,13 +1019,13 @@ function! <SID>ShowBuffers(delBufNum)
     set noshowcmd 
 
     " Delete all lines in buffer.
-    1,$d _
+    silent 1,$d _
   
     " Goto the end of the buffer put the buffer list 
     " and then delete the extra trailing blank line
     $
     put! =g:miniBufExplBufList
-    $ d _
+    silent $d _
 
     let g:miniBufExplForceDisplay = 0
 
