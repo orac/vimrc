@@ -1,0 +1,56 @@
+" from default vimrc
+map! <xHome> <Home>
+map! <xEnd> <End>
+vnoremap p :let current_reg = @"gvdi=current_reg
+map <xHome> <Home>
+map <xEnd> <End>
+
+" open preview window for keyword under cursor
+nnoremap <F1> :ptag <CR>
+
+" Tagexplorer plugin
+nnoremap <F2> :Tlist<Enter>
+
+nnoremap <F3> :nohlsearch<Enter>
+inoremap <F3> :nohlsearch<Enter>
+
+" deprecate this F4 map
+nnoremap <F4> :echo "Use CTRL-6 instead, you retard."<CR>
+
+nnoremap <F5> :make<Enter>
+nnoremap <S-F5> :!sudo make install<Enter>
+
+" re-break paragraph under cursor
+nnoremap <F6> gwap
+
+" put an undo point and re-break current line
+inoremap <F6> ugww<Right>
+
+" :tn and :cn are too much typing
+nnoremap <F7> :tn<Enter>
+nnoremap <S-F7> :tprev<Enter>
+nnoremap <F8> :cn<Enter>
+nnoremap <S-F8> :cprev<Enter>
+
+nnoremap <Space> <PageDown>
+nnoremap <BS> <PageUp>
+
+" split lines (opposite of J)
+nnoremap S m'a<CR><Esc>`'
+
+" add an undo point before pasting
+inoremap  u
+inoremap <MiddleMouse> u<MiddleMouse>
+
+" make ^l act like it does in normal mode in insert mode
+inoremap  
+
+" wrap selected block in braces and indent
+vnoremap } >g'<O{<Esc>g'>o}<Esc>
+" unblockify block
+nnoremap { [{<%']dd''dd''
+
+" deprecate these unnecessary maps
+nnoremap [f :echo "Use CTRL-W f instead, you retard."<CR>
+nnoremap [F :echo "Use CTRL-W F instead, you retard."<CR>
+

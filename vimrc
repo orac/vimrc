@@ -5,57 +5,6 @@ set nocp
 runtime macros/justify.vim
 runtime macros/matchit.vim
 
-" key maps
-map! <xHome> <Home>
-map! <xEnd> <End>
-vnoremap p :let current_reg = @"gvdi=current_reg
-map <xHome> <Home>
-map <xEnd> <End>
-
-" open preview window for keyword under cursor
-nnoremap <F1> :ptag <CR>
-nnoremap <F2> :Tlist<Enter>
-nnoremap <F3> :nohlsearch<Enter>
-inoremap <F3> :nohlsearch<Enter>
-
-" deprecate this F4 map
-nnoremap <F4> :echo "Use CTRL-6 instead, you retard."<CR>
-nnoremap <F5> :make<Enter>
-nnoremap <S-F5> :!sudo make install<Enter>
-
-" re-break paragraph under cursor
-nnoremap <F6> gwap
-
-" put an undo point and re-break current line
-inoremap <F6> ugww<Right>
-
-" :cn is too much typing
-nnoremap <F8> :cn<Enter>
-nnoremap <S-F8> :cprev<Enter>
-
-"imap <F5> :call strftime("/* %m/%y dh */")
-nnoremap <Space> <PageDown>
-nnoremap <BS> <PageUp>
-
-" split lines (opposite of J)
-nnoremap S m'a<CR><Esc>`'
-
-" add an undo point before pasting
-inoremap  u
-inoremap <MiddleMouse> u<MiddleMouse>
-
-" make ^l act like it does in normal mode in insert mode
-inoremap  
-
-" wrap selected block in braces and indent
-vnoremap } >g'<O{<Esc>g'>o}<Esc>
-" unblockify block
-nnoremap { [{<%']dd''dd''
-
-" like gf but in a new window
-nnoremap [f :sp<Enter>gf
-nnoremap [F :sp<Enter>gF
-
 " general options
 set backspace=indent,eol,start
 set helplang=en
@@ -160,6 +109,7 @@ ia happenned happened
 ia happenning happening
 ia nn NULL
 
+so <sfile>:h/maps.vim
 so <sfile>:h/digraphs.vim
 
 " fold expr works like fdm=indent but includes the last non-indented line with
