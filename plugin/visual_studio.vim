@@ -46,13 +46,13 @@ if ! exists ('g:visual_studio_quickfix_height')
     let g:visual_studio_quickfix_height = 20
 endif
 if ! exists ('g:visual_studio_quickfix_errorformat_cpp')
-    let g:visual_studio_quickfix_errorformat_cpp = '\ %#%f(%l)\ :\ %m'
+    let g:visual_studio_quickfix_errorformat_cpp = '%*\\d>\ %#%f(%l)\ :\ %m'
 endif
 if ! exists ('g:visual_studio_quickfix_errorformat_csharp')
-    let g:visual_studio_quickfix_errorformat_csharp = '\ %#%f(%l\\\,%c):\ %m'
+    let g:visual_studio_quickfix_errorformat_csharp = '%*\\d>\ %#%f(%l\\\,%c):\ %m'
 endif
 if ! exists ('g:visual_studio_quickfix_errorformat_find_results')
-    let g:visual_studio_quickfix_errorformat_find_results = '\ %#%f(%l):%m'
+    let g:visual_studio_quickfix_errorformat_find_results = '%*\\d>\ %#%f(%l):%m'
 endif
 if ! exists ('g:visual_studio_quickfix_errorformat')
     let s:qf1 = g:visual_studio_quickfix_errorformat_cpp
