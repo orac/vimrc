@@ -14,8 +14,8 @@ nnoremap <F2> :Tlist<Enter>
 nnoremap <F3> :nohlsearch<Enter>
 inoremap <F3> :nohlsearch<Enter>
 
-" deprecate this F4 map
-nnoremap <F4> :echo "Use CTRL-6 instead, you retard."<CR>
+" switch to other file
+nnoremap <F4> :Switch<Enter>
 
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
