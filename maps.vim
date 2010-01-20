@@ -45,11 +45,6 @@ inoremap <MiddleMouse> u<MiddleMouse>
 " make ^l act like it does in normal mode in insert mode
 inoremap  
 
-" wrap selected block in braces and indent
-vnoremap } >g'<O{<Esc>g'>o}<Esc>
-" unblockify block
-nnoremap { [{<%']dd''dd''
-
 " deprecate these unnecessary maps
 nnoremap [f :echo "Use CTRL-W f instead, you retard."<CR>
 nnoremap [F :echo "Use CTRL-W F instead, you retard."<CR>
