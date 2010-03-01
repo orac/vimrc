@@ -35,6 +35,10 @@ nnoremap <S-F8> :cprev<Enter>
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
 
+" use FuzzyFinder
+nnoremap <Leader>t :FufTag<CR>
+nnoremap <Leader>b :FufBuffer<CR>
+
 " split lines (opposite of J)
 nnoremap S m'a<CR><Esc>`'
 
