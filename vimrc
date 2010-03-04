@@ -98,7 +98,7 @@ set linebreak
 set ruler
 set showmatch
 set showcmd
-set guioptions-=Tm
+set guioptions-=T guioptions-=m
 set guifont=Neep\ Alt\ 8
 au GuiEnter * set lines=42
 "set mousemodel=popup
