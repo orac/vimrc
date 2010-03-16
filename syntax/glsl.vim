@@ -6,6 +6,7 @@
 " Version:      1.10.00
 " Notes:        Adapted from c.vim - Bram Moolenaar <bram.vim.org>
 "               Adapted from cg.vim - Kevin Bjorke <kbjorke@nvidia.com>
+" Locally modified by Daniel Hulme! See git log for details.
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -253,7 +254,7 @@ if version >= 508 || !exists("did_glsl_syn_inits")
   HiLink glslCppOut2                  glslCppOut
   HiLink glslCppOut                   Comment
   HiLink glslUniform                  glslType
-  HiLink glslState                    glslType
+  HiLink glslState                    Identifier
   HiLink glslFunc                     glslStatement
   HiLink glslUnsupported              glslError
 
