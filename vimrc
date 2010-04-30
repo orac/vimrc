@@ -42,7 +42,6 @@ set listchars=trail:_,tab:→·,nbsp:░
 
 " search options
 set hlsearch
-nohlsearch " because I hate starting Vim and getting the last search from my previous session hl'ed
 set incsearch
 set ignorecase smartcase
 
@@ -85,7 +84,7 @@ set cino=(0,W1s,m1,g1s,h0
 
 set suffixes=.bak,~,.swp,.swo,.o,.info,.aux,.log,.dvi,.ps,.pdf,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png
 set termencoding=utf8
-set viminfo='20,\"50
+set viminfo='20,s2,%15,h
 
 " spell-checker options
 set spelllang=en_gb
