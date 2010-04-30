@@ -7,7 +7,7 @@ map <xEnd> <End>
 
 " open preview window for keyword under cursor
 nnoremap <F1> :ptag <CR>
-nnoremap <C-F8> :pcl<CR>
+nnoremap <C-F1> :pcl<CR>
 
 " Tagexplorer plugin
 nnoremap <F2> :Tlist<Enter>
