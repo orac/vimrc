@@ -10,13 +10,13 @@ nnoremap <F1> :ptag <CR>
 nnoremap <C-F1> :pcl<CR>
 
 " Tagexplorer plugin
-nnoremap <F2> :Tlist<Enter>
+nnoremap <silent> <F2> :Tlist<Enter>
 
-nnoremap <F3> :nohlsearch<Enter>
-inoremap <F3> :nohlsearch<Enter>
+nnoremap <silent> <F3> :nohlsearch<Enter>
+inoremap <silent> <F3> :nohlsearch<Enter>
 
 " switch to other file
-nnoremap <F4> :Switch<Enter>
+nnoremap <silent> <F4> :Switch<Enter>
 
 nnoremap <F5> :make<Enter>
 nnoremap <S-F5> :!sudo make install<Enter>
@@ -28,18 +28,18 @@ nnoremap <F6> gwap
 inoremap <F6> ugww<Right>
 
 " :tn and :cn are too much typing
-nnoremap <F7> :tn<Enter>
-nnoremap <S-F7> :tprev<Enter>
-nnoremap <F8> :cn<Enter>
-nnoremap <S-F8> :cprev<Enter>
-nnoremap <C-F8> :ccl<Enter>
+nnoremap <silent> <F7> :tn<Enter>
+nnoremap <silent> <S-F7> :tprev<Enter>
+nnoremap <silent> <F8> :cn<Enter>
+nnoremap <silent> <S-F8> :cprev<Enter>
+nnoremap <silent> <C-F8> :ccl<Enter>
 
 nnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
 
 " use FuzzyFinder
-nnoremap <Leader>t :FufTag<CR>
-nnoremap <Leader>b :FufBuffer<CR>
+nnoremap <silent> <Leader>t :FufTag<CR>
+nnoremap <silent> <Leader>b :FufBuffer<CR>
 
 " split lines (opposite of J)
 nnoremap S m'a<CR><Esc>`'
@@ -50,6 +50,14 @@ inoremap <MiddleMouse> u<MiddleMouse>
 
 " make ^l act like it does in normal mode in insert mode
 inoremap  
+
+" paste with current indent plus 1
+" should work with registers too, but this is entirely by accident
+nnoremap [p ]p>']
+nnoremap [P ]P>']
+
+cnoremap  "
+cnoremap  
 
 " deprecate these unnecessary maps
 nnoremap [f :echo "Use CTRL-W f instead, you retard."<CR>
