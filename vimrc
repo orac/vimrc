@@ -103,6 +103,11 @@ au GuiEnter * set lines=42
 "set mousemodel=popup
 colorscheme koehler
 
+if exists('+rnu')
+	set rnu
+	hi LineNr guifg=gray ctermfg=gray
+endif
+
 " speling
 ia happenned happened
 ia happenning happening
