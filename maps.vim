@@ -35,7 +35,9 @@ nnoremap <silent> <S-F8> :cprev<Enter>
 nnoremap <silent> <C-F8> :ccl<Enter>
 
 nnoremap <Space> <PageDown>
+vnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
+vnoremap <BS> <PageUp>
 
 " use FuzzyFinder
 nnoremap <silent> <Leader>t :FufTag<CR>
