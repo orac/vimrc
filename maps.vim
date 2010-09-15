@@ -44,7 +44,7 @@ nnoremap <silent> <Leader>t :FufTag<CR>
 nnoremap <silent> <Leader>b :FufBuffer<CR>
 
 " split lines (opposite of J)
-nnoremap S m'a<CR><Esc>`'
+nnoremap S m'a<CR><Esc>==`'
 
 " add an undo point before pasting
 inoremap  u
