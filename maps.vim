@@ -5,8 +5,17 @@ vnoremap p :let current_reg = @"gvdi=current_reg
 map <xHome> <Home>
 map <xEnd> <End>
 
-" open preview window for keyword under cursor
-nnoremap <F1> :ptag <CR>
+" find and close the/a help window
+function s:helpclose()
+	let l:helpnum = 0
+	windo if &buftype == 'help' | let l:helpnum = winnr() | endif
+	if l:helpnum != 0
+		exe l:helpnum . 'wincmd w'
+		close
+	endif
+endfunc
+
+nnoremap <F1> :call <SID>helpclose()<CR>
 nnoremap <C-F1> :pcl<CR>
 
 " Tagexplorer plugin
