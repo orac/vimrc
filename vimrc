@@ -106,6 +106,7 @@ colorscheme koehler
 if exists('+rnu')
 	set rnu
 	hi LineNr guifg=gray ctermfg=gray
+	au BufReadPost quickfix setl nornu
 endif
 
 " speling
