@@ -124,6 +124,7 @@ fugitive-:Gblame	fugitive.txt	/*fugitive-:Gblame*
 fugitive-:Gcd	fugitive.txt	/*fugitive-:Gcd*
 fugitive-:Gcommit	fugitive.txt	/*fugitive-:Gcommit*
 fugitive-:Gdiff	fugitive.txt	/*fugitive-:Gdiff*
+fugitive-:Gdiff!	fugitive.txt	/*fugitive-:Gdiff!*
 fugitive-:Ge	fugitive.txt	/*fugitive-:Ge*
 fugitive-:Gedit	fugitive.txt	/*fugitive-:Gedit*
 fugitive-:Ggrep	fugitive.txt	/*fugitive-:Ggrep*
@@ -204,6 +205,7 @@ g:fuf_useMigemo	fuf.txt	/*g:fuf_useMigemo*
 i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
 i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 speeddating	speeddating.txt	/*speeddating*
+speeddating-.	speeddating.txt	/*speeddating-.*
 speeddating-CTRL-A	speeddating.txt	/*speeddating-CTRL-A*
 speeddating-CTRL-X	speeddating.txt	/*speeddating-CTRL-X*
 speeddating-author	speeddating.txt	/*speeddating-author*
@@ -223,6 +225,7 @@ surround-mappings	surround.txt	/*surround-mappings*
 surround-replacements	surround.txt	/*surround-replacements*
 surround-targets	surround.txt	/*surround-targets*
 surround.txt	surround.txt	/*surround.txt*
+vS	surround.txt	/*vS*
 vcscommand	vcscommand.txt	/*vcscommand*
 vcscommand-buffer-management	vcscommand.txt	/*vcscommand-buffer-management*
 vcscommand-buffer-variables	vcscommand.txt	/*vcscommand-buffer-variables*
@@ -246,6 +249,7 @@ vcscommand-ssh-other	vcscommand.txt	/*vcscommand-ssh-other*
 vcscommand-ssh-wrapper	vcscommand.txt	/*vcscommand-ssh-wrapper*
 vcscommand-statusline	vcscommand.txt	/*vcscommand-statusline*
 vcscommand.txt	vcscommand.txt	/*vcscommand.txt*
+vgS	surround.txt	/*vgS*
 vs	surround.txt	/*vs*
 yS	surround.txt	/*yS*
 ySS	surround.txt	/*ySS*
