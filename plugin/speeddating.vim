@@ -1,6 +1,6 @@
 " speeddating.vim - Use CTRL-A/CTRL-X to increment dates, times, and more
 " Maintainer:   Tim Pope <vimNOSPAM@tpope.org>
-" Last Change:
+" Version:      20100301
 " GetLatestVimScripts: 2120 1 :AutoInstall: speeddating.vim
 
 " Initialization {{{1
@@ -609,6 +609,7 @@ function! s:dateincrement(string,offset,increment) dict
         let i += 1
     endfor
     call s:initializetime(time)
+    let inner_offset = 0
     if char == 'o'
         let inner_offset = partial_matchend - offset - 1
         let factor = 15
@@ -621,9 +622,16 @@ function! s:dateincrement(string,offset,increment) dict
         endif
         let time.o += factor * a:increment
         let time.m += factor * a:increment
+    elseif char == 'b'
+        let time.b += a:increment
+        let goal = time.y*12 + time.b
+        call s:normalizetime(time)
+        while time.y*12 + time.b > goal
+            let time.d -= 1
+            call s:normalizetime(time)
+        endwhile
     else
         let time[char] += a:increment
-        let inner_offset = 0
     endif
     let format = substitute(self.strftime,'\\\([1-9]\)','\=caps[submatch(1)-1]','g')
     let time_string = s:strftime(format,time)
