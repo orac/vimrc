@@ -75,5 +75,5 @@ nnoremap [f :echo "Use CTRL-W f instead, you retard."<CR>
 nnoremap [F :echo "Use CTRL-W F instead, you retard."<CR>
 
 " swap : and ; (very experimental)
-nnoremap ; :
-nnoremap : ;
+noremap ; :
+noremap : ;
