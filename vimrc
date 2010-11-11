@@ -30,6 +30,8 @@ set wildmenu
 cnoremap <Left> <Space><BS><Left>
 cnoremap <Right> <Space><BS><Right>
 
+set cot=menu,preview,longest
+
 " add command to write and reopen
 command -nargs=0 -bang W w<bang> | e
 
