@@ -7,6 +7,7 @@ runtime macros/justify.vim
 runtime macros/matchit.vim
 
 " general options
+set hidden
 set backspace=indent,eol,start
 set helplang=en
 set history=50
