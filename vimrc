@@ -3,7 +3,6 @@ call pathogen#infect()
 filetype plugin indent on
 syntax enable
 set nocp
-runtime macros/justify.vim
 runtime macros/matchit.vim
 
 " general options
