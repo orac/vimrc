@@ -7,6 +7,8 @@
 :CVSWatchOn	vcscommand.txt	/*:CVSWatchOn*
 :CVSWatchRemove	vcscommand.txt	/*:CVSWatchRemove*
 :CVSWatchers	vcscommand.txt	/*:CVSWatchers*
+:DisableUnicodeCompletion	unicode.txt	/*:DisableUnicodeCompletion*
+:EnableUnicodeCompletion	unicode.txt	/*:EnableUnicodeCompletion*
 :FufAddBookmark	fuf.txt	/*:FufAddBookmark*
 :FufAddBookmarkAsSelectedText	fuf.txt	/*:FufAddBookmarkAsSelectedText*
 :FufBookmark	fuf.txt	/*:FufBookmark*
@@ -25,6 +27,7 @@
 :FufTagWithCursorWord	fuf.txt	/*:FufTagWithCursorWord*
 :FufTaggedFile	fuf.txt	/*:FufTaggedFile*
 :SpeedDatingFormat	speeddating.txt	/*:SpeedDatingFormat*
+:UnicodeName	unicode.txt	/*:UnicodeName*
 :VCSAdd	vcscommand.txt	/*:VCSAdd*
 :VCSAnnotate	vcscommand.txt	/*:VCSAnnotate*
 :VCSBlame	vcscommand.txt	/*:VCSBlame*
@@ -69,6 +72,7 @@ b:VCSCommandSourceFile	vcscommand.txt	/*b:VCSCommandSourceFile*
 b:VCSCommandVCSType	vcscommand.txt	/*b:VCSCommandVCSType*
 cs	surround.txt	/*cs*
 cvscommand-changes	vcscommand.txt	/*cvscommand-changes*
+digraph-completion	unicode.txt	/*digraph-completion*
 ds	surround.txt	/*ds*
 ft-gitcommit-plugin	ft-gitcommit-plugin.txt	/*ft-gitcommit-plugin*
 fuf	fuf.txt	/*fuf*
@@ -121,10 +125,10 @@ fuf.txt	fuf.txt	/*fuf.txt*
 fugitive	fugitive.txt	/*fugitive*
 fugitive#statusline()	fugitive.txt	/*fugitive#statusline()*
 fugitive-:Gblame	fugitive.txt	/*fugitive-:Gblame*
+fugitive-:Gbrowse	fugitive.txt	/*fugitive-:Gbrowse*
 fugitive-:Gcd	fugitive.txt	/*fugitive-:Gcd*
 fugitive-:Gcommit	fugitive.txt	/*fugitive-:Gcommit*
 fugitive-:Gdiff	fugitive.txt	/*fugitive-:Gdiff*
-fugitive-:Gdiff!	fugitive.txt	/*fugitive-:Gdiff!*
 fugitive-:Ge	fugitive.txt	/*fugitive-:Ge*
 fugitive-:Gedit	fugitive.txt	/*fugitive-:Gedit*
 fugitive-:Ggrep	fugitive.txt	/*fugitive-:Ggrep*
@@ -134,12 +138,14 @@ fugitive-:Glog	fugitive.txt	/*fugitive-:Glog*
 fugitive-:Gmove	fugitive.txt	/*fugitive-:Gmove*
 fugitive-:Gpedit	fugitive.txt	/*fugitive-:Gpedit*
 fugitive-:Gread	fugitive.txt	/*fugitive-:Gread*
-fugitive-:Gread!	fugitive.txt	/*fugitive-:Gread!*
 fugitive-:Gremove	fugitive.txt	/*fugitive-:Gremove*
+fugitive-:Gsdiff	fugitive.txt	/*fugitive-:Gsdiff*
 fugitive-:Gsplit	fugitive.txt	/*fugitive-:Gsplit*
 fugitive-:Gstatus	fugitive.txt	/*fugitive-:Gstatus*
 fugitive-:Gtabedit	fugitive.txt	/*fugitive-:Gtabedit*
+fugitive-:Gvdiff	fugitive.txt	/*fugitive-:Gvdiff*
 fugitive-:Gvsplit	fugitive.txt	/*fugitive-:Gvsplit*
+fugitive-:Gwq	fugitive.txt	/*fugitive-:Gwq*
 fugitive-:Gwrite	fugitive.txt	/*fugitive-:Gwrite*
 fugitive-<CR>	fugitive.txt	/*fugitive-<CR>*
 fugitive-C	fugitive.txt	/*fugitive-C*
@@ -204,6 +210,7 @@ g:fuf_timeFormat	fuf.txt	/*g:fuf_timeFormat*
 g:fuf_useMigemo	fuf.txt	/*g:fuf_useMigemo*
 i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
 i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
+i_CTRL-X_CTRL-C	unicode.txt	/*i_CTRL-X_CTRL-C*
 speeddating	speeddating.txt	/*speeddating*
 speeddating-.	speeddating.txt	/*speeddating-.*
 speeddating-CTRL-A	speeddating.txt	/*speeddating-CTRL-A*
@@ -225,6 +232,13 @@ surround-mappings	surround.txt	/*surround-mappings*
 surround-replacements	surround.txt	/*surround-replacements*
 surround-targets	surround.txt	/*surround-targets*
 surround.txt	surround.txt	/*surround.txt*
+unicode-copyright	unicode.txt	/*unicode-copyright*
+unicode-plugin	unicode.txt	/*unicode-plugin*
+unicode-plugin-config	unicode.txt	/*unicode-plugin-config*
+unicode-plugin-error	unicode.txt	/*unicode-plugin-error*
+unicode-plugin-history	unicode.txt	/*unicode-plugin-history*
+unicode-plugin-usage	unicode.txt	/*unicode-plugin-usage*
+unicode.txt	unicode.txt	/*unicode.txt*
 vS	surround.txt	/*vS*
 vcscommand	vcscommand.txt	/*vcscommand*
 vcscommand-buffer-management	vcscommand.txt	/*vcscommand-buffer-management*
