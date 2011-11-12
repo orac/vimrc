@@ -1,4 +1,5 @@
 set encoding=utf8
+call pathogen#infect()
 filetype plugin indent on
 syntax enable
 set nocp
