@@ -106,6 +106,9 @@ au GuiEnter * set lines=42
 "set mousemodel=popup
 colorscheme koehler
 
+" I find the default fold colours in koehler hard to read
+hi Folded term=standout ctermfg=11 ctermbg=8 guifg=Blue guibg=DarkGrey
+
 if exists('+rnu')
 	set rnu
 	hi LineNr guifg=gray ctermfg=gray
