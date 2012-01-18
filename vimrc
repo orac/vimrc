@@ -106,9 +106,6 @@ au GuiEnter * set lines=42
 "set mousemodel=popup
 colorscheme koehler
 
-" I find the default fold colours in koehler hard to read
-hi Folded term=standout ctermfg=11 ctermbg=8 guifg=Blue guibg=DarkGrey
-
 if exists('+rnu')
 	set rnu
 	hi LineNr guifg=gray ctermfg=gray
@@ -122,10 +119,7 @@ ia nn NULL
 
 so <sfile>:h/maps.vim
 so <sfile>:h/digraphs.vim
-
-" fold expr works like fdm=indent but includes the last non-indented line with
-" the indented fold
-set foldexpr=max(\[indent(v:lnum+1),indent(v:lnum)\])
+so <sfile>:h/fold.vim
 
 " netrw
 let g:netrw_altv=1
