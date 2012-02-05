@@ -1,0 +1,3 @@
+[submodule "bundle/vim-hoogle"]
+	path = bundle/vim-hoogle
+	url = http://github.com/Twinside/vim-hoogle.git
