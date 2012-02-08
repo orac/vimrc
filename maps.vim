@@ -43,6 +43,9 @@ nnoremap <silent> <F8> :cn<Enter>
 nnoremap <silent> <S-F8> :cprev<Enter>
 nnoremap <silent> <C-F8> :ccl<Enter>
 
+nnoremap <silent> <S-PageUp> :Next<Enter>
+nnoremap <silent> <S-PageDown> :next<Enter>
+
 nnoremap <Space> <PageDown>
 vnoremap <Space> <PageDown>
 nnoremap <BS> <PageUp>
@@ -67,8 +70,12 @@ inoremap  
 nnoremap [p ]p>']
 nnoremap [P ]P>']
 
+" I paste the default reg all the time and ^R" is too much reaching
+imap  "
 cnoremap  "
 cnoremap  
+" ^R^L to insert the cursor line into the command line
+cnoremap  =getline('.')<CR>
 
 " deprecate these unnecessary maps
 nnoremap [f :echo "Use CTRL-W f instead, you retard."<CR>
